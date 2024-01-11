@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História e Evolução do computador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body.light-bg {
+        background-color: #f5f5f5;
+    }
+        
+    body.dark-bg {
+        background-color: #333;
+        color: #fff;
+    }
+</style>
+<body class="light-bg font-family: 'Arial', sans-serif;">
+    <!-- O corpo da página começa com a classe 'light-bg' aplicada -->
+    <div class="container mt-2">
+        <button id="toggle-bg-button" class="form-action btn btn-dark">Alterar</button>
+         <!-- Um botão para alternar entre os modos claro e escuro -->
+        <script>
+            const body = document.body;
+            //Manipulação do body
+            const button = document.getElementById('toggle-bg-button');
+            //Cria um id para ser chamado para que a alteração seja ativada pelo button
+            let isDarkMode = false;
+            //Declara uma variavel e a inicializa como falsa (é o que define se o tema vai ser claro ou escuro
+            
+            button.addEventListener('click', function() {
+            //Será executado quando o botão for clicado.    
+                isDarkMode = !isDarkMode;
+                //Inverte o valor de false para true e vice-versa. 
+                if (isDarkMode) {
+                //verifica o valor
+                    body.classList.remove('light-bg');
+                    //remove
+                    body.classList.add('dark-bg');
+                    //adiciona
+                } else {
+                    body.classList.remove('dark-bg');
+                    //remove
+                    body.classList.add('light-bg');
+                    //adiciona
+                }
+            });
+        </script>
+    <a href="http://localhost/projeto_turma_integrante01-integrante02/Home/index.php" class="form-action btn btn-dark">Voltar</a>
+    <header class="text-center py-4">
+        <h1>História e Evolução do computador</h1>
+    </header>
+
+    <!-- Conteúdo -->
+    <div class="container mt-3">
+        <div class="row mt-3">
+            <div class="col-sm-12 border border-dark borda p-3">
+                <h2>Década de 1930 - Antecedentes</h2>
+                <p>A história dos computadores começa com máquinas analógicas, como a Máquina Analítica de Charles Babbage, concebida no século XIX. No entanto, essas máquinas não 
+                    foram construídas em sua totalidade.</p>
+            </div>
+        </div> 
+
+        <div class="row mt-3">  
+            <div class="col-sm-12 border border-dark borda p-3">
+                <h2>Década de 1940 - Os Primeiros Computadores Eletrônicos</h2>
+                <p>Durante a Segunda Guerra Mundial, os primeiros computadores eletrônicos, como o ENIAC e o Colossus, foram desenvolvidos para fins militares e científicos. 
+                    Eles eram enormes, consumiam muita energia e tinham capacidade limitada.</p>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-sm-12 border border-dark borda p-3">
+                <h3>Década de 1950 - Era dos Mainframes</h3>
+                <p>Os mainframes, como o IBM 650 e o UNIVAC I, começaram a ser usados em empresas e universidades. Eles eram grandes e caros, usados principalmente para processamento 
+                    de dados e cálculos científicos.</p>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-sm-12 border border-dark borda p-3">
+                <h3>Década de 1960 - Minicomputadores e o Surgimento da Eletrônica de Estado Sólido</h3>
+                <p>Surgiram os minicomputadores, como o DEC PDP-8, que eram menores e mais acessíveis.</p>
+                <p>A introdução de componentes eletrônicos de estado sólido, como transistores, possibilitou a criação de computadores mais compactos e eficientes.</p>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-sm-12 border border-dark borda p-3">
+                <h3>Década de 1970 - O Microcomputador e o Início da Revolução Pessoal</h3>
+                <p>A década de 1970 viu o nascimento do microcomputador com o Altair 8800 e o Apple I.</p>
+                <p>A Microsoft, fundada por Bill Gates e Paul Allen, desenvolveu o sistema operacional MS-DOS, que se tornou amplamente utilizado.</p>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-sm-12 border border-dark borda p-3">
+                <h3>Década de 1980 - A Era dos Computadores Pessoais</h3>
+                <p>Os anos 1980 testemunharam a popularização dos computadores pessoais (PCs), como o IBM PC, o Macintosh da Apple e o MS-DOS.</p>
+                <p>O mouse e a interface gráfica do usuário (GUI) foram introduzidos, tornando os computadores mais acessíveis.</p>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-sm-12 border border-dark borda p-3">
+                <h3>Década de 1990 até Hoje - Era da Conectividade e da Mobilidade</h3>
+                <p>A década de 1990 viu o crescimento da Internet e a explosão da World Wide Web.</p>
+                <p>A evolução tecnológica levou ao surgimento de laptops, tablets e smartphones, tornando a computação acessível e móvel.</p>
+                <p>A nuvem, a inteligência artificial e a virtualização de servidores revolucionaram a computação moderna.</p>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-sm-12 border border-dark borda p-3">
+                <h3>Futuro - Computação Quântica e Tecnologias Emergentes</h3>
+                <p>A computação quântica representa uma nova fronteira na computação, prometendo soluções para problemas complexos que estão além da capacidade dos computadores 
+                    clássicos.</p>
+                <p>Outras tecnologias emergentes, como a computação neuromórfica e a realidade virtual/aumentada, estão moldando o futuro da computação.</p>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-sm-12 border border-dark borda p-3">
+                <h3 class="text-center">Conclusão</h3>
+                <p>A história dos computadores é uma jornada incrível de inovação e progresso tecnológico, que transformou a forma como vivemos, trabalhamos e nos comunicamos. 
+                    A computação continua a evoluir rapidamente, impulsionada por avanços em hardware, software e conectividade, e está moldando o mundo em que vivemos.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 text-center mt-3">
+        <a href="http://localhost/projeto_turma_integrante01-integrante02/Questionario4/quest1.php" class="btn btn-danger">Realizar um pequeno questionario</a>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-2 mt-1">
+        2023 História e Evolução do computador
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História e Evolução do celular</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body.light-bg {
+        background-color: #f5f5f5;
+    }
+        
+    body.dark-bg {
+        background-color: #333;
+        color: #fff;
+    }
+</style>
+<body class="light-bg font-family: 'Arial', sans-serif;">
+    <!-- O corpo da página começa com a classe 'light-bg' aplicada -->
+    <div class="container mt-2">
+        <button id="toggle-bg-button" class="form-action btn btn-dark">Alterar</button>
+         <!-- Um botão para alternar entre os modos claro e escuro -->
+        <script>
+            const body = document.body;
+            //Manipulação do body
+            const button = document.getElementById('toggle-bg-button');
+            //Cria um id para ser chamado para que a alteração seja ativada pelo button
+            let isDarkMode = false;
+            //Declara uma variavel e a inicializa como falsa (é o que define se o tema vai ser claro ou escuro
+            
+            button.addEventListener('click', function() {
+            //Será executado quando o botão for clicado.    
+                isDarkMode = !isDarkMode;
+                //Inverte o valor de false para true e vice-versa. 
+                if (isDarkMode) {
+                //verifica o valor
+                    body.classList.remove('light-bg');
+                    //remove
+                    body.classList.add('dark-bg');
+                    //adiciona
+                } else {
+                    body.classList.remove('dark-bg');
+                    //remove
+                    body.classList.add('light-bg');
+                    //adiciona
+                }
+            });
+        </script>
+    <a href="http://localhost/projeto_turma_integrante01-integrante02/Home/index.php" class="form-action btn btn-dark">Voltar</a>
+    <header class="text-center py-4">
+        <h1>História e Evolução do celular</h1>
+    </header>
+
+    <!-- Conteúdo -->
+    <div class="container mt-3">
+        <div class="row mt-3">
+            <div class="col-sm-12 border border-dark borda p-3">
+                <h2>Pré-Anos 1970 - O Conceito Inicial</h2>
+                <p>A história dos celulares começou com conceitos e tecnologias experimentais em meados do século XX. O Motorola DynaTAC 8000X, lançado em 1983, é frequentemente 
+                    considerado o primeiro celular comercial. No entanto, era grande, pesado e caro.</p>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-sm-12 border border-dark borda p-3">
+                <h2>Década de 1990 - Popularização</h2>
+                <p>A década de 1990 viu uma rápida popularização dos celulares, com modelos como o Nokia 5110 e o Motorola StarTAC ganhando destaque.</p>
+                
+                <p>As redes móveis analógicas deram lugar às redes digitais, tornando as comunicações mais eficientes.</p>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-sm-12 border border-dark borda p-3">
+                <h3>Década de 2000 - Era dos Celulares com Câmera e SMS</h3>
+                <p>Nesse período, os celulares evoluíram para incluir câmeras integradas, mensagens de texto (SMS) e acesso à internet móvel.</p>
+                <p>O BlackBerry se tornou popular devido à sua funcionalidade de e-mail.</p>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-sm-12 border border-dark borda p-3">
+                <h3>Década de 2010 - Era dos Smartphones</h3>
+                <p>O lançamento do iPhone em 2007 por Steve Jobs revolucionou a indústria. Os smartphones, que combinavam funções de telefone com acesso à internet, aplicativos e 
+                    tela sensível ao toque, se tornaram onipresentes.</p>
+                <p>Android, sistema operacional da Google, também desempenhou um papel fundamental na popularização dos smartphones.</p>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-sm-12 border border-dark borda p-3">
+                <h3>Década de 2020 - Avanços Tecnológicos</h3>
+                <p>Os smartphones modernos estão equipados com recursos avançados, como câmeras de alta resolução, reconhecimento facial, telas dobráveis, conectividade 5G e 
+                    assistentes virtuais, como a Siri e a Google Assistant.</p>
+                <p>A privacidade e segurança dos dados se tornaram questões críticas.</p>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-sm-12 border border-dark borda p-3">
+                <h3>Futuro - Celulares Inteligentes e Sustentáveis</h3>
+                <p>A tendência atual envolve a evolução dos smartphones em direção a dispositivos mais inteligentes, como a Internet das Coisas (IoT), e a busca por soluções de 
+                    energia mais sustentáveis, incluindo baterias de estado sólido e carregamento sem fio.</p>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-sm-122 border border-dark borda p-3">
+                <h3 class="text-center">Conclusão</h3>
+                <p>A história dos celulares é uma narrativa de inovação tecnológica e convergência de funções, transformando esses dispositivos de simples aparelhos de comunicação 
+                    em verdadeiros computadores de bolso e assistentes pessoais. A evolução dos celulares continua a moldar nossa sociedade e a maneira como nos comunicamos e 
+                    interagimos com o mundo.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 text-center mt-3">
+        <a href="http://localhost/projeto_turma_integrante01-integrante02/Questionario2/quest1.php" class="btn btn-danger">Realizar um pequeno questionario</a>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-2 mt-1">
+        2023 História e Evolução do celular
+    </footer>
+
+</body>
+</html>

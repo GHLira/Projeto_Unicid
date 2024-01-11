@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História e Evolução das motocicletas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body.light-bg {
+        background-color: #f5f5f5;
+    }
+        
+    body.dark-bg {
+        background-color: #333;
+        color: #fff;
+    }
+</style>
+<body class="light-bg font-family: 'Arial', sans-serif;">
+    <!-- O corpo da página começa com a classe 'light-bg' aplicada -->
+    <div class="container mt-2">
+        <button id="toggle-bg-button" class="form-action btn btn-dark">Alterar</button>
+         <!-- Um botão para alternar entre os modos claro e escuro -->
+        <script>
+            const body = document.body;
+            //Manipulação do body
+            const button = document.getElementById('toggle-bg-button');
+            //Cria um id para ser chamado para que a alteração seja ativada pelo button
+            let isDarkMode = false;
+            //Declara uma variavel e a inicializa como falsa (é o que define se o tema vai ser claro ou escuro
+            
+            button.addEventListener('click', function() {
+            //Será executado quando o botão for clicado.    
+                isDarkMode = !isDarkMode;
+                //Inverte o valor de false para true e vice-versa. 
+                if (isDarkMode) {
+                //verifica o valor
+                    body.classList.remove('light-bg');
+                    //remove
+                    body.classList.add('dark-bg');
+                    //adiciona
+                } else {
+                    body.classList.remove('dark-bg');
+                    //remove
+                    body.classList.add('light-bg');
+                    //adiciona
+                }
+            });
+        </script>
+        <a href="http://localhost/projeto_turma_integrante01-integrante02/Home/index.php" class="form-action btn btn-dark">Voltar</a>
+        <header class="text-center py-4">
+            <h1>História e Evolução das Motocicletas</h1>
+        </header>
+    
+        <!-- Conteúdo -->
+        <div class="container mt-3">
+            <div class="row mt-3">
+                <div class="col-sm-12 border border-dark borda p-3">
+                    <h2>Década de 1860 - Início das Máquinas de Duas Rodas</h2>
+                    <p>As motocicletas tiveram origens nas "bicicletas motorizadas", que eram basicamente bicicletas com motores acoplados. A primeira motocicleta reconhecida é 
+                        frequentemente atribuída a Karl Daimler em 1885.</p>
+                </div>
+            </div> 
+    
+            <div class="row mt-3">  
+                <div class="col-sm-12 border border-dark borda p-3">
+                    <h2>Década de 1900 - Popularização</h2>
+                    <p>No início do século XX, várias empresas começaram a fabricar motocicletas, como a Harley-Davidson e a Indian Motorcycle Company nos Estados Unidos. Modelos 
+                        como a Harley-Davidson "Serial Number One" surgiram nesse período.</p>
+                </div>
+            </div>
+    
+            <div class="row mt-3">
+                <div class="col-sm-12 border border-dark borda p-3">
+                    <h3>Décadas de 1920 e 1930 - Era das Café Racers e Bobbers</h3>
+                    <p>Durante a década de 1920 e 1930, surgiram estilos de personalização de motos conhecidos como Café Racers e Bobbers. Essas motos eram frequentemente modificadas 
+                        para corridas de rua e tinham designs distintos.</p>
+                </div>
+            </div>
+    
+            <div class="row mt-3">
+                <div class="col-sm-12 border border-dark borda p-3">
+                    <h3>Década de 1940 - Uso Militar</h3>
+                    <p>Durante a Segunda Guerra Mundial, as motos desempenharam um papel significativo no transporte militar, com modelos como a Harley-Davidson WLA sendo usados pelas 
+                        forças armadas.</p>
+                </div>
+            </div>
+    
+            <div class="row mt-3">
+                <div class="col-sm-12 border border-dark borda p-3">
+                    <h3>Décadas de 1950 e 1960 - Motocicletas Clássicas</h3>
+                    <p>Nesse período, modelos icônicos como a Triumph Bonneville e a Honda Super Cub surgiram. A cultura de motociclismo cresceu em popularidade.</p>
+                </div>
+            </div>
+    
+            <div class="row mt-3">
+                <div class="col-sm-12 border border-dark borda p-3">
+                    <h3>Décadas de 1970 e 1980 - Motocicletas Esportivas e Avanços Tecnológicos</h3>
+                    <p>As motocicletas esportivas, como a Kawasaki Z1 e a Honda CB750, se tornaram populares. Avanços em eletrônica e engenharia levaram a melhorias em desempenho, 
+                        segurança e conforto.</p>
+                </div>
+            </div>
+    
+            <div class="row mt-3">
+                <div class="col-sm-12 border border-dark borda p-3">
+                    <h3>Década de 1990 até Hoje - Diversidade de Estilos e Tecnologia</h3>
+                    <p>As motos continuam a evoluir com uma ampla variedade de estilos, incluindo esportivas, cruisers, aventureiras e customizadas.</p>
+                    <p>A introdução de sistemas de freios ABS, controle de tração e eletrônica avançada, como injeção eletrônica, mudaram a maneira como as motos são projetadas e 
+                        pilotadas.</p>
+                    <p>A eletrificação, com motos elétricas, está ganhando destaque à medida que a indústria se adapta às preocupações com o meio ambiente.</p>
+                </div>
+            </div>
+    
+            <div class="row mt-3">
+                <div class="col-sm-12 border border-dark borda p-3">
+                    <h3>Futuro - Motocicletas Autônomas e Sustentáveis</h3>
+                    <p>A pesquisa está sendo conduzida no desenvolvimento de motocicletas autônomas, com tecnologias avançadas de segurança.</p>
+                    <p>A eletrificação, incluindo motocicletas elétricas e híbridas, é vista como uma maneira de tornar as motos mais sustentáveis.</p>
+                </div>
+            </div>
+    
+            <div class="row mt-3">
+                <div class="col-sm-12 border border-dark borda p-3">
+                    <h3 class="text-center">Conclusão</h3>
+                    <p>A história das motocicletas é uma narrativa de inovação em design, desempenho e segurança. Elas continuam a ser uma forma popular de transporte e lazer em todo 
+                        o mundo, e a evolução tecnológica está moldando o futuro das duas rodas.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 text-center mt-3">
+            <a href="http://localhost/projeto_turma_integrante01-integrante02/Questionario3/quest1.php" class="btn btn-danger">Realizar um pequeno questionario</a>
+        </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-2 mt-1">
+        2023 História e Evolução das motocicletas
+    </footer>
+
+</body>
+</html>
